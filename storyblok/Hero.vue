@@ -7,7 +7,7 @@
 </script>
 
 <template>
-  <section v-editable="blok" :style="{backgroundColor: blok.background_color?.color, ...heroHeight}">
+  <section v-editable="blok" :style="{backgroundColor: blok.background_color?.color, ...heroHeight}" class="bg-gray-100 dark:bg-gray-800">
     <div class="image-box" :style="{minHeight: `${blok.height}px`, ...heroHeight}">
       <NuxtImg 
         v-if="blok?.background_image?.filename" 

@@ -45,7 +45,7 @@ const computedStyle = computed(() => {
 </script>
 
 <template>
-  <section :style="{ backgroundColor: blok.background_color?.color }" class="px-6 lg:px-8 py-24 sm:py-32 relative">
+  <section :style="{ backgroundColor: blok.background_color?.color }" class="px-6 lg:px-8 py-24 sm:py-32 relative bg-gray-100 dark:bg-gray-800">
     <div :id="blok?.section_id" style="position: relative; visibility: hidden;" class="md:top-[-100px]"></div>
     <div class="text-center">
       <h2 class="font-semibold font-heading text-gray-800 dark:text-gray-100" :style="{color: blok?.title_color?.color}">{{ blok?.title || 'Get in touch' }}</h2>
